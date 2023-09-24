@@ -7,7 +7,7 @@ public class Area {
 		return s * s;
 	}
 
-	public int cuboid(int l, int b) {
+	public double cuboid(int l, int b) {
 		return l * b;
 	}
 
