@@ -3,7 +3,7 @@ pipeline {
    tools {
      maven ' MAVEN_HOME '
       }
-       stages {
+       stage {
           stage ('Wellcome Stage' )
               { 
                 steps {
