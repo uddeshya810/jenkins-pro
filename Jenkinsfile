@@ -12,6 +12,7 @@ pipeline {
 			 	echo 'welcome to Jenkins Pipeline'
 			 }
 			}
+<<<<<<< HEAD
 			
 			stage('Maven Clean')
 			{
@@ -20,6 +21,8 @@ pipeline {
 			 	bat 'mvn clean' 
 			 }
 			}
+=======
+>>>>>>> e584c954eee319df05e3e1bbdf5b30b6c2fe3d86
 			stage('Maven package')
 			{
 			 steps
@@ -51,3 +54,7 @@ pipeline {
 		}
 	}
 	
+<<<<<<< HEAD
+=======
+                                   
+>>>>>>> e584c954eee319df05e3e1bbdf5b30b6c2fe3d86
