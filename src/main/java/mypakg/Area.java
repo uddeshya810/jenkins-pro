@@ -17,7 +17,9 @@ public class Area {
 
 	public static void main(String[] args) {
 		 Scanner sc = new Scanner (System.in);
-		 System.out.println("Value is =   gbbfng");
+		 System.out.println("Value is =  *********");
+                    System.out.println("*********");
+
 		Area obj = new Area();
 		System.out.println("Enter the value of side of Square");
 		int num;
