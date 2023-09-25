@@ -25,7 +25,7 @@ jobs:
     - name: docker push image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: udeshya810/buildpush:tagname
+        image: udeshya810/buildpush
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
