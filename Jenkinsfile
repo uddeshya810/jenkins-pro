@@ -1,32 +1,54 @@
 pipeline {
- agent any 
-   tools {
-     maven ' MAVEN_HOME '
-      }
-       stage {
-          stage ('Wellcome Stage' )
-              { 
-                steps {
-                     echo 'Wellcome to Jenkins Pipelne' }
-                  }
-           stage ('Maven Stage')
-                 {
-                  steps {
-                          bat 'mvn clean '}
-                          }
-             stage ('Maven Package'){
-                 steps{
-                        bat 'mvn package' }
-                        }
-              stage ('Maven install'){
-                 steps {
-                    bat 'mvn install' }
-                    }
-               stage ('Final Build Steps'){
-                 steps { 
-                 echo 'build done'}
-                 }
-                 }
-                 }
-                         
+	agent any
+	tools {
+	maven 'MAVEN_HOME'
+	}
+	
+	stages{
+			stage('Welcome Stage')
+			{
+			 steps
+			 {
+			 	echo 'welcome to Jenkins Pipeline'
+			 }
+			}
+			
+			stage('Maven Clean')
+			{
+			 steps
+			 {
+			 	bat 'mvn clean' 
+			 }
+			}
+			stage('Maven package')
+			{
+			 steps
+			 {
+			 	bat 'mvn package' 
+			 }
+			}
+			stage('Maven Install')
+			{
+			 steps
+			 {
+			 	bat 'mvn install' 
+			 }
+			}
+			stage('Maven Test')
+			{
+			 steps
+			 {
+			 	bat 'mvn test' 
+			 }
+			}
+			stage('Final Build Step')
+			{
+			 steps
+			 {
+			 	echo 'Build Done' 
+			 }
+			}
+		}
+	}
+	
                                    
