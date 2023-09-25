@@ -12,14 +12,6 @@ pipeline {
 			 	echo 'welcome to Jenkins Pipeline'
 			 }
 			}
-			
-			stage('Maven Clean')
-			{
-			 steps
-			 {
-			 	bat 'mvn clean' 
-			 }
-			}
 			stage('Maven package')
 			{
 			 steps
